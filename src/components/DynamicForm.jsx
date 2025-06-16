@@ -3,7 +3,7 @@ import FormField from "./FormField";
 import validate from "../utils/validate";
 
 
-export default function DynamicForm({ config }) {
+function DynamicForm({ config }) {
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
 
@@ -45,3 +45,5 @@ export default function DynamicForm({ config }) {
     </form>
   );
 }
+
+export default DynamicForm;
